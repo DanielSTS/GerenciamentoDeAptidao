@@ -1,0 +1,25 @@
+package gerenciador;
+
+public class Disciplina {
+	private Aluno alunos[];
+	private double notas[];
+	private int quantidadeAlunos = 0;
+	
+	
+	public Disciplina() {
+		
+	}
+	public void adicionaAluno(Aluno a1, Aluno a2){
+		this.alunos[0] = a1;
+		this.alunos[1] = a2;
+	}
+	
+	public int getQuantidadeAlunos(){
+		for
+		return this.quantidadeAlunos;
+	}
+	
+	public double getIra(){
+		return alunos[0].getIra();
+	}
+}
