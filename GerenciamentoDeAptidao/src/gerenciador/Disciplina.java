@@ -19,7 +19,7 @@ public class Disciplina {
 		return this.quantidadeAlunos;
 	}
 	
-	public double getIra(){
+	public String getIra(){
 		return alunos[0].getIra();
 	}
 }

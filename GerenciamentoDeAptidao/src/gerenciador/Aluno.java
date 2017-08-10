@@ -1,8 +1,8 @@
 package gerenciador;
 
 public class Aluno {
-	private String nome, matricula;
-	private double ira, iraEspecifico;
+	private String nome, matricula, ira;
+	private double iraEspecifico;
 	
 	
 	public Aluno() {
@@ -30,13 +30,14 @@ public class Aluno {
 	}
 
 
-	public double getIra() {
+	public String getIra() {
 		return ira;
 	}
 
 
-	public void setIra(double ira) {
-		this.ira = ira;
+	public void setIra() {
+		ExtrairDados ira = new ExtrairDados();
+		this.ira = ira.getIRAExcel();
 	}
 
 

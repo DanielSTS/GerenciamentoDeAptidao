@@ -5,7 +5,7 @@ import java.io.*;
 public class TestFuncionalidades {
 
 	public static void main(String[] args) {
-		Disciplina calculo = new Disciplina();
+		/*Disciplina calculo = new Disciplina();
 		Disciplina vetorial = new Disciplina();
 		
 		Aluno betao = new Aluno();
@@ -16,8 +16,11 @@ public class TestFuncionalidades {
 		calculo.adicionaAluno(betao, DannyBoy);
 		
 		
-		TopicosPorArea mat = new TopicosPorArea(calculo);
-		
+		TopicosPorArea mat = new TopicosPorArea(calculo);*/
+		Aluno betao = new Aluno();
+		betao.setIra();
+		System.out.println(betao.getIra());
+
 		
 	}
 

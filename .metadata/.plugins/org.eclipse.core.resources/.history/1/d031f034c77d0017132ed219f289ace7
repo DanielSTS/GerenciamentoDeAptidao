@@ -1,0 +1,58 @@
+package gerenciador;
+/***
+
+* @author J Gabriel Lima
+ 
+*/
+
+import java.io.File;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.Cell;
+
+ 
+public class ExemploJXL {
+	private Workbook planilha; // objeto que receberÃ¡ um instancia da planilha estudada
+
+	private Sheet aba; // objeto que serÃ¡ a aba
+
+	private File arquivo; // arquivo .xls que serÃ¡ lido
+
+	public ExemploJXL() {
+
+	try {
+
+	arquivo = new File("HistoricoParcialIFPB.xls");
+
+	// instancia a planilha
+
+	planilha = Workbook.getWorkbook(arquivo);
+
+	//Obendo as Abas da planilha
+
+	Sheet[] abas = planilha.getSheets();
+
+	aba = planilha.getSheet(0); // pega a primeira aba, ou seja, aba de indice 0.
+
+	Cell[] linha = aba.getRow(0); // pega a primeira linha, ou seja, linhas de indice 0.
+
+	// mostra os dados da linha
+	for(Cell c : linha)
+	{
+
+	System.out.println(c.getContents());
+
+	}
+
+	} catch (Exception e) {
+	e.printStackTrace();
+	}
+	}
+
+	public static void main(String[] args) {
+
+	new ExemploJXL();
+
+	}
+
+}
