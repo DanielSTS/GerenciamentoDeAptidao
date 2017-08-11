@@ -37,15 +37,6 @@ public class ExtrairDados {
 			Cell[] linha = aba.getRow(1); // pega a segunda linha, ou seja, linhas de indice 1.
 			
 			ira = linha[0];
-			
-			
-			// mostra os dados da linha
-			/*for(Cell c : linha)
-			{
-
-			System.out.println(c.getContents());
-
-			}*/
 
 			} catch (Exception e) {
 			e.printStackTrace();
