@@ -1,15 +1,21 @@
 package gerenciador;
 
 public class Aluno {
+	private String disciplinas[];
 	private String nome, matricula, ira;
-	private double iraEspecifico;
+	private double iraEspecifico, notas[];
+	private int contadorDisciplina = 0;
 	
 	
 	public Aluno() {
 		
 	}
 
-
+	public void setDisciplina(String disciplina){
+		this.disciplinas[contadorDisciplina] = disciplina;
+		contadorDisciplina++;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -35,9 +41,8 @@ public class Aluno {
 	}
 
 
-	public void setIra() {
-		ExtrairDados ira = new ExtrairDados();
-		this.ira = ira.getIRAExcel();
+	public void setIra(String ira) {
+		this.ira = ira;
 	}
 
 

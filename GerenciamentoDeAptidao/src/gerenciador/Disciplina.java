@@ -2,7 +2,6 @@ package gerenciador;
 
 public class Disciplina {
 	private Aluno alunos[];
-	private double notas[];
 	private int quantidadeAlunos = 0;
 	
 	

@@ -7,22 +7,28 @@ import jxl.Cell;
 
  
 public class ExtrairDados {
-	private Workbook planilha; // objeto que receberÃ¡ um instancia da planilha estudada
+	private Workbook planilha; // objeto que recebera um instancia da planilha estudada
 
-	private Sheet aba; // objeto que serÃ¡ a aba
+	private Sheet aba; // objeto que sera a aba
 
-	private File arquivo; // arquivo .xls que serÃ¡ lido
-
+	private File arquivo; // arquivo .xls que sera lido
+	
+	//private Aluno[] alunos = new Aluno();
+	private int i = 0, contadorAbas = 0;
 	
 	public ExtrairDados() {
 
 	
 	}
-	public String getIRAExcel(){
-		Cell ira = null;
+	//adicionar os alunos num array
+	public void criaAlunos(String aluno){
+		Aluno aluno1 = new Aluno();
+		//this.alunos[0] = aluno1;
+		Cell ira = null, nome = null, matricula = null;
+		
 		try {
-
-			arquivo = new File("HistoricoParcialIFPB.xls");
+			String teste = aluno+".xls";
+			arquivo = new File(teste);
 
 			// instancia a planilha
 
@@ -31,19 +37,47 @@ public class ExtrairDados {
 			//Obendo as Abas da planilha
 
 			Sheet[] abas = planilha.getSheets();
-
-			aba = planilha.getSheet(9); // pega a decima aba, ou seja, aba de indice 9.
-
-			Cell[] linha = aba.getRow(1); // pega a segunda linha, ou seja, linhas de indice 1.
+		
+			//Loop para obter informações da planilha de cada aluno!
+			while(ira == null){
+				aba = planilha.getSheet(contadorAbas);
+				Cell[] linha = aba.getRow(0);
+				
+				//Adiciona o nome do aluno
+				if(linha[0].getContents().equals("Nome:")){
+					nome = linha[1];
+					aluno1.setNome(nome.getContents());
+					contadorAbas++;
+					
+				//Adiciona a Matrícula do Aluno	
+				}else if(linha[0].getContents().trim().substring(0, 9).equals("Dados Aca")){
+					linha = aba.getRow(1);
+					matricula = linha[0];
+					aluno1.setMatricula(matricula.getContents().substring(29, 40));
+					contadorAbas++;
+					
+				//Adiciona o Coeficiente de Redimento do Aluno	
+				}else if(linha[0].getContents().equals("Coeficiente de Rendimento")){
+					linha = aba.getRow(1);
+					ira = linha[0];
+					aluno1.setIra(ira.getContents());
+					contadorAbas++;
+				}else{
+					contadorAbas++;
+				}
+			}
 			
-			ira = linha[0];
+			System.out.println(aluno1.getNome());
+			System.out.println(aluno1.getMatricula());
+			System.out.println(aluno1.getIra());
+			
 
 			} catch (Exception e) {
 			e.printStackTrace();
 			}
-		return ira.getContents();
-			
+		System.out.println("Aluno criado com Sucesso!");
 	}
+	
 }
 
 
