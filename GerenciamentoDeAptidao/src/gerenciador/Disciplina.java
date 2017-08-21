@@ -1,24 +1,26 @@
 package gerenciador;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Disciplina {
-	private Aluno alunos[];
-	private int quantidadeAlunos = 0;
+	
+	private ArrayList<Aluno> alunos = new ArrayList<Aluno> ();
+	private int quantAlunos = 0;
 	
 	
 	public Disciplina() {
 		
 	}
-	public void adicionaAluno(Aluno a1, Aluno a2){
-		this.alunos[0] = a1;
-		this.alunos[1] = a2;
-	}
 	
-	public int getQuantidadeAlunos(){
+	//Recebe o array de alunos e procura alunos matriculados na disciplina
+	
+	public int getQuantAlunos(){
 		
-		return this.quantidadeAlunos;
+		return this.quantAlunos;
 	}
 	
-	public String getIra(){
-		return alunos[0].getIra();
+	public void adicionaAluno(Aluno aluno){
+		this.alunos.add(aluno);
 	}
 }

@@ -10,7 +10,7 @@ public class TopicosPorArea {
 	
 	public void melhorAluno(){
 		
-		disciplinas[0].getIra();
+	
 		
 	}
 

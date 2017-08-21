@@ -1,19 +1,34 @@
 package gerenciador;
 
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Aluno {
-	private String disciplinas[];
+	private ArrayList<String> disciplinas = new ArrayList<String>();
+	private ArrayList<Double> notas = new ArrayList<Double> ();
 	private String nome, matricula, ira;
-	private double iraEspecifico, notas[];
-	private int contadorDisciplina = 0;
+	private int contDisciplina = 0,contNotas = 0;
 	
 	
 	public Aluno() {
 		
 	}
+	
+	public void imprimirNotaseDisciplinas(){
+		for (int i = 0; i<contDisciplina;i++){
+			System.out.println(disciplinas.get(i));
+			System.out.println(notas.get(i));
+		}
+	}
 
+	public void setNotas(double notas){
+		this.notas.add(notas);
+		contNotas++;
+	}
 	public void setDisciplina(String disciplina){
-		this.disciplinas[contadorDisciplina] = disciplina;
-		contadorDisciplina++;
+		this.disciplinas.add(disciplina);
+		contDisciplina++;
 	}
 	
 	public String getNome() {
@@ -45,16 +60,5 @@ public class Aluno {
 		this.ira = ira;
 	}
 
-
-	public double getIraEspecifico() {
-		return iraEspecifico;
-	}
-
-
-	public void setIraEspecifico(double iraEspecifico) {
-		this.iraEspecifico = iraEspecifico;
-	}
-	
-	
 
 }
