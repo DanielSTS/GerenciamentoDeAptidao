@@ -16,11 +16,18 @@ public class Aluno {
 		
 	}
 	
+	public void substituirNota(double nota){
+		this.notas.set(contNotas -1, nota);
+	}
 	public void imprimirNotaseDisciplinas(){
 		for (int i = 0; i<contDisciplina;i++){
 			System.out.println(disciplinas.get(i));
 			System.out.println(notas.get(i));
 		}
+	}
+	
+	public ArrayList<String>  getDisciplina(){
+		return this.disciplinas;
 	}
 
 	public void setNotas(double notas){

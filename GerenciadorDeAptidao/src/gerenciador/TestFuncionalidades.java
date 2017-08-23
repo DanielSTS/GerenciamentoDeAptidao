@@ -9,9 +9,11 @@ public class TestFuncionalidades {
 		ExtrairDados dados= new ExtrairDados();
 		
 		
+		dados.criaAlunos("Alfredo");
+		//dados.criaAlunos("Leandro");
+		dados.criaAlunos("Leonardo");
 		dados.criaAlunos("Daniel");
 		dados.criaAlunos("Alberto");
-		
 		
 		
 	}

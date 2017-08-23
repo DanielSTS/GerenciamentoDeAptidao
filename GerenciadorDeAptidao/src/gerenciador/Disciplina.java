@@ -7,8 +7,17 @@ public class Disciplina {
 	
 	private ArrayList<Aluno> alunos = new ArrayList<Aluno> ();
 	private int quantAlunos = 0;
+	private String nome;
 	
 	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
 	public Disciplina() {
 		
 	}

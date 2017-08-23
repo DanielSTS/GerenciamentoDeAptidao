@@ -18,8 +18,13 @@ public class ExtrairDados {
 	private File arquivo; // arquivo .xls que sera lido
 	
 	private ArrayList<Aluno> alunos = new ArrayList<Aluno> ();
+	 
+	private ArrayList<Disciplina> disciplinas = new ArrayList<Disciplina> ();
 	
-	private int contAlunos = -1;
+	private ArrayList<String> disciplinas2 = new ArrayList<String>();
+
+	
+	private int contAlunos = -1,contDisciplinas = -1;
 	
 	public ArrayList<Aluno> getAlunos() {
 		return alunos;
@@ -31,6 +36,9 @@ public class ExtrairDados {
 	}
 	//adicionar os alunos num array
 	public void criaAlunos(String nomeAluno){
+		
+		String ultimaDisciplina = null;
+		double ultimaNota = 0;
 		
 		int contadorAbas = 0, aux = 2;
 		
@@ -51,7 +59,7 @@ public class ExtrairDados {
 
 			Sheet[] abas = planilha.getSheets();
 		
-			//Loop para obter informaï¿½ï¿½es da planilha de cada aluno!
+			//Loop para obter informações da planilha de cada aluno!
 			
 			while (ira == null){
 			
@@ -64,7 +72,7 @@ public class ExtrairDados {
 					alunos.get(this.contAlunos).setNome(nome.getContents());
 					contadorAbas++;
 					
-				//Adiciona a Matrï¿½cula do Aluno	
+				//Adiciona a Matricula do Aluno	
 				}else if(linha[0].getContents().trim().substring(0, 9).equals("Dados Aca")){
 					linha = aba.getRow(1);
 					matricula = linha[0];
@@ -81,21 +89,50 @@ public class ExtrairDados {
 				// Adiciona as disciplinas e notas do Aluno 
 				//Double.valueOf(linha2[5].getContents()).doubleValue()  Transforma de String em Double
 				//variavel "aux" para o loop de disciplinas e notas 
-				}else if(linha[0].getContents().equals("Perï¿½odo Letivo")){
-					while(aux<5){
+				}else if(linha[0].getContents().equals("Período Letivo")){
+					
+					while(aux<21){
 						Cell[] linha2 = aba.getRow(aux);
+						/*Adiciona as notas e disiplinas, tratando os casos em que o aluno pagou mais de uma vez a mesma disciplina  */
+						if (disciplinas2.indexOf(linha2[3].getContents())== -1){
+						this.disciplinas2.add(linha2[3].getContents());
+						}
+						
+						if((linha2[3].getContents()).equals(ultimaDisciplina)){
+							
+							if(!(linha2[5].getContents().equals("-")) && Double.valueOf(linha2[5].getContents()).doubleValue() > ultimaNota){
+								
+								
+								alunos.get(this.contAlunos).substituirNota(Double.valueOf(linha2[5].getContents()).doubleValue());
+								
+								ultimaDisciplina = linha2[3].getContents();
+								ultimaNota = Double.valueOf(linha2[5].getContents()).doubleValue();
+								aux++;
+								
+							}
+						
+						}else if(!linha2[5].getContents().equals("-")){
+						
 						alunos.get(this.contAlunos).setDisciplina(linha2[3].getContents());
 						alunos.get(this.contAlunos).setNotas(Double.valueOf(linha2[5].getContents()).doubleValue());
+						ultimaDisciplina = linha2[3].getContents();
+						ultimaNota = Double.valueOf(linha2[5].getContents()).doubleValue();
 						aux++;
-					contadorAbas++;
+						
+						}else{
+							aux++;
+							
+						}
+						
 					}
 					
-				}else{
 					contadorAbas++;
-					}
+				} 
+				else{
+					contadorAbas++;
+				} 
+			
 			}
-			
-			
 			
 			
 			System.out.println(alunos.get(this.contAlunos).getNome());
@@ -104,14 +141,27 @@ public class ExtrairDados {
 			alunos.get(this.contAlunos).imprimirNotaseDisciplinas();
 			
 			
-			} catch (Exception e) {
+			
+		} catch (Exception e) {
 			e.printStackTrace();
 			}
 		
 		
 	}
 	
-	
+	public void criaDisciplinas(Aluno aluno, String nome){
+		
+		for(String nomeDisciplina:disciplinas2){
+			this.disciplinas.add(new Disciplina());
+			contDisciplinas++;
+			disciplinas.get(this.contDisciplinas).setNome(nomeDisciplina);
+			for(Aluno nomeAluno:alunos){
+				
+			}
+			
+		}
+	}
 }
+
 
 
