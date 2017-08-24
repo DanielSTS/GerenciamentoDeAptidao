@@ -62,7 +62,7 @@ public class ExtrairDados {
 
 			Sheet[] abas = planilha.getSheets();
 		
-			//Loop para obter informações da planilha de cada aluno!
+			//Loop para obter informaï¿½ï¿½es da planilha de cada aluno!
 			
 			while (ira == null){
 			
@@ -94,7 +94,7 @@ public class ExtrairDados {
 				   variavel "aux" para o loop de disciplinas e notas */
 					
 					/*Adiciona as notas e disiplinas, tratando os casos em que o aluno pagou mais de uma vez a mesma disciplina  */
-				}else if(linha[0].getContents().equals("Período Letivo")){
+				}else if(linha[0].getContents().equals("PerÃ­odo Letivo")){
 					
 					while(aux<21){
 						Cell[] linha2 = aba.getRow(aux);
@@ -144,7 +144,7 @@ public class ExtrairDados {
 			System.out.println(alunos.get(this.contAlunos).getMatricula());
 			System.out.println(alunos.get(this.contAlunos).getIra());
 			alunos.get(this.contAlunos).imprimirNotaseDisciplinas();
-			disciplinas.get(this.contDisciplinas).imprimeDados();*/
+			//disciplinas.get(this.contDisciplinas).imprimeDados();*/
 			
 			
 			
@@ -155,7 +155,7 @@ public class ExtrairDados {
 		
 	}
 	
-	//Cria as disciplinas analisando se já existem, adiciona alunos e notas em cada
+	//Cria as disciplinas analisando se jï¿½ existem, adiciona alunos e notas em cada
 	public void criarDisciplinas(Aluno nomeAluno,String nomeDisciplina, double notaAluno ){
 		
 	
@@ -187,10 +187,10 @@ public class ExtrairDados {
 		this.TopicosPorArea.get(this.contTopicosPorArea).setNome(nomeTopicosPorArea);
 		
 		for (int i = 0; i<=contAlunos;i++){
-				double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
-				double nota2 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina2))*(peso2);
-				this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
-				this.TopicosPorArea.get(this.contTopicosPorArea).setNota((nota1+nota2)/(peso1+peso2));
+			double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
+			double nota2 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina2))*(peso2);
+			this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
+			this.TopicosPorArea.get(this.contTopicosPorArea).setNota((nota1+nota2)/(peso1+peso2));
 		}
 		
 	}
