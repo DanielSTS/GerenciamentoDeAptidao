@@ -15,9 +15,9 @@ public class TestFuncionalidades {
 		dados.criaAlunos("Alberto");
 		
 		
-		dados.criarTopico("programador","Algoritmos e Programação",4,"Ciências do Ambiente",5);
+		dados.criarTopico("programador","Algoritmos e Programação",4,"Ciências do Ambiente",4);
 		dados.criarTopico("eletrônica","Sistemas Digitais I", 3,"Inglês Instrumental", 5);
-		//dados.imprimirTudo("Algoritmos e Programação","programador");
+		dados.imprimirTudo("Algoritmos e Programação","programador");
 		dados.imprimirTudo("Sistemas Digitais I","eletrônica");
 	}
 
