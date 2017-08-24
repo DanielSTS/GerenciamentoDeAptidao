@@ -15,10 +15,10 @@ public class TestFuncionalidades {
 		dados.criaAlunos("Alberto");
 		
 		
-		dados.criarTopico("programador","Algoritmos e Programação",4,"Ciências do Ambiente",4);
-		dados.criarTopico("eletrônica","Sistemas Digitais I", 3,"Inglês Instrumental", 5);
-		dados.imprimirTudo("Algoritmos e Programação","programador");
-		dados.imprimirTudo("Sistemas Digitais I","eletrônica");
+		dados.criarTopico("programador","Algoritmos e ProgramaÃ§Ã£o",4,"CiÃªncias do Ambiente",4);
+		dados.criarTopico("eletrÃ´nica","Sistemas Digitais I", 3,"InglÃªs Instrumental", 5);
+		dados.imprimirTudo("Algoritmos e ProgramaÃ§Ã£o","programador");
+		dados.imprimirTudo("Sistemas Digitais I","eletrÃ´nica");
 	}
 
 }
