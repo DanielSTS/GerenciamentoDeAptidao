@@ -94,7 +94,7 @@ public class ExtrairDados {
 				   variavel "aux" para o loop de disciplinas e notas */
 					
 					/*Adiciona as notas e disiplinas, tratando os casos em que o aluno pagou mais de uma vez a mesma disciplina  */
-				}else if(linha[0].getContents().equals("PerÃ­odo Letivo")){
+				}else if(linha[0].getContents().equals("Período Letivo")){
 					
 					while(aux<21){
 						Cell[] linha2 = aba.getRow(aux);
