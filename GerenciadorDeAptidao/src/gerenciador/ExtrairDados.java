@@ -22,9 +22,12 @@ public class ExtrairDados {
 	private ArrayList<Disciplina> disciplinas = new ArrayList<Disciplina> ();
 	
 	private ArrayList<String> nomesdisciplinas = new ArrayList<String>();
-
 	
-	private int contAlunos = -1,contDisciplinas = -1;
+	private ArrayList<TopicosPorArea> TopicosPorArea = new ArrayList<TopicosPorArea>();
+
+	private ArrayList<String> nomeTopicosPorArea = new ArrayList<String>();
+	
+	private int contAlunos = -1,contDisciplinas = -1,contTopicosPorArea = -1;
 	
 	public ArrayList<Aluno> getAlunos() {
 		return alunos;
@@ -170,9 +173,28 @@ public class ExtrairDados {
 		
 	}
 	//imprime os alunos cadastrados em determinada disciplina
-	public void imprimirTudo(String nomeDisciplina){
+	public void imprimirTudo(String nomeDisciplina,String nomeTopico){
 		int posicao = this.nomesdisciplinas.lastIndexOf(nomeDisciplina);
 		this.disciplinas.get(posicao).imprimeDados();
+		int posicao2 = this.nomeTopicosPorArea.lastIndexOf(nomeTopico);
+		this.TopicosPorArea.get(posicao2).imprimeDados();
 	}
+	
+	public void criarTopico(String nomeTopicosPorArea, String disciplina1, double peso1,String disciplina2, double peso2){
+		this.nomeTopicosPorArea.add(nomeTopicosPorArea);
+		this.TopicosPorArea.add(new TopicosPorArea());
+		this.contTopicosPorArea++;
+		this.TopicosPorArea.get(this.contTopicosPorArea).setNome(nomeTopicosPorArea);
+		
+		for (int i = 0; i<=contAlunos;i++){
+				double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
+				double nota2 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina2))*(peso2);
+				this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
+				this.TopicosPorArea.get(this.contTopicosPorArea).setNota((nota1+nota2)/(peso1+peso2));
+		}
+		
+	}
+	
 }
+
 

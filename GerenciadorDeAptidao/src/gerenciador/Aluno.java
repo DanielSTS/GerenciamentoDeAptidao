@@ -10,8 +10,16 @@ public class Aluno {
 	private ArrayList<Double> notas = new ArrayList<Double> ();
 	private String nome, matricula, ira;
 	private int contDisciplina = 0,contNotas = 0;
+	private double iraEspecifico;
 	
-	
+	public double getIraEspecifico() {
+		return iraEspecifico;
+	}
+
+	public void setIraEspecifico(double iraEspecifico) {
+		this.iraEspecifico = iraEspecifico;
+	}
+
 	public Aluno() {
 		
 	}
@@ -28,6 +36,10 @@ public class Aluno {
 	
 	public ArrayList<String>  getDisciplina(){
 		return this.disciplinas;
+	}
+	
+	public ArrayList<Double>  getNotas(){
+		return this.notas;
 	}
 
 	public void setNotas(double notas){
