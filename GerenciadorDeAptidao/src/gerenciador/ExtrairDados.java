@@ -8,6 +8,7 @@ import jxl.Cell;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.text.NumberFormat;
+import java.util.Scanner;
 
  
 public class ExtrairDados {
@@ -26,6 +27,8 @@ public class ExtrairDados {
 	private ArrayList<TopicosPorArea> TopicosPorArea = new ArrayList<TopicosPorArea>();
 
 	private ArrayList<String> nomeTopicosPorArea = new ArrayList<String>();
+	
+	private ArrayList<String> codigoDisciplina = new ArrayList<String>();
 	
 	private int contAlunos = -1,contDisciplinas = -1,contTopicosPorArea = -1;
 	
@@ -167,6 +170,7 @@ public class ExtrairDados {
 			this.contDisciplinas++;
 			this.disciplinas.get(this.contDisciplinas).setNome(nomeDisciplina);
 			this.disciplinas.get(this.contDisciplinas).setCodigo(codigoDisciplina);
+			this.codigoDisciplina.add(codigoDisciplina);
 			
 			
 			
@@ -190,10 +194,22 @@ public class ExtrairDados {
 		this.TopicosPorArea.add(new TopicosPorArea());
 		this.contTopicosPorArea++;
 		this.TopicosPorArea.get(this.contTopicosPorArea).setNome(nomeTopicosPorArea);
-		double notaTopico = 0;
+		double notaTopico = 0,peso = 0, pesoTotal = 0;
+		String nomeDisciplina = null;
+		Scanner entrada = new Scanner(System.in);
 		
-		for (int i = 0; i<=contAlunos;i++){
+		
+		
 			while(true) {
+				System.out.println();
+				nomeDisciplina = entrada.next();
+				System.out.println();
+				peso = entrada.nextInt();
+				pesoTotal = pesoTotal + peso;
+				
+				for (int i = 0; i<=contAlunos;i++){
+					this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
+					this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(nomeDisciplina));
 				
 			}
 			//double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
@@ -207,6 +223,7 @@ public class ExtrairDados {
 	public void imprimirDisciplinas() {
 		for( Disciplina disciplina: disciplinas){
 			System.out.println(disciplina.getCodigo()+"\t"+disciplina.getNome());
+			
 		}
 	}
 	public void topicoArea() {
