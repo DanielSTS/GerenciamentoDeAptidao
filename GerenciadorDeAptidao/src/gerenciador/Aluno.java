@@ -34,10 +34,6 @@ public class Aluno {
 		}
 	}
 	
-	public ArrayList<String>  getDisciplina(){
-		return this.disciplinas;
-	}
-	
 	public ArrayList<Double>  getNotas(){
 		return this.notas;
 	}
@@ -46,6 +42,11 @@ public class Aluno {
 		this.notas.add(notas);
 		contNotas++; 
 	}
+	
+	public ArrayList<String>  getDisciplina(){
+		return this.disciplinas;
+	}
+	
 	public void setDisciplina(String disciplina){
 		this.disciplinas.add(disciplina);
 		contDisciplina++;

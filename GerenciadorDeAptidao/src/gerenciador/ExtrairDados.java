@@ -40,7 +40,7 @@ public class ExtrairDados {
 	//adicionar os alunos num array
 	public void criaAlunos(String nomeAluno){
 		
-		String ultimaDisciplina = null;
+		String ultimaDisciplina = null, codigoDisciplina = null;
 		double ultimaNota = 0;
 		
 		int contadorAbas = 0, aux = 2;
@@ -109,9 +109,10 @@ public class ExtrairDados {
 								alunos.get(this.contAlunos).substituirNota(Double.valueOf(linha2[5].getContents()).doubleValue());
 								
 								ultimaDisciplina = linha2[3].getContents();
+								codigoDisciplina = linha2[2].getContents();
 								ultimaNota = Double.valueOf(linha2[5].getContents()).doubleValue();
 								aux++;
-								criarDisciplinas(alunos.get(this.contAlunos), ultimaDisciplina,ultimaNota);
+								criarDisciplinas(alunos.get(this.contAlunos), ultimaDisciplina, ultimaNota, codigoDisciplina);
 								
 							}
 						
@@ -120,9 +121,10 @@ public class ExtrairDados {
 						alunos.get(this.contAlunos).setDisciplina(linha2[3].getContents());
 						alunos.get(this.contAlunos).setNotas(Double.valueOf(linha2[5].getContents()).doubleValue());
 						ultimaDisciplina = linha2[3].getContents();
+						codigoDisciplina = linha2[2].getContents();
 						ultimaNota = Double.valueOf(linha2[5].getContents()).doubleValue();
 						aux++;
-						criarDisciplinas(alunos.get(this.contAlunos), ultimaDisciplina,ultimaNota);
+						criarDisciplinas(alunos.get(this.contAlunos), ultimaDisciplina, ultimaNota, codigoDisciplina);
 						
 						}else{
 							aux++;
@@ -156,7 +158,7 @@ public class ExtrairDados {
 	}
 	
 	//Cria as disciplinas analisando se j� existem, adiciona alunos e notas em cada
-	public void criarDisciplinas(Aluno nomeAluno,String nomeDisciplina, double notaAluno ){
+	public void criarDisciplinas(Aluno nomeAluno,String nomeDisciplina, double notaAluno, String codigoDisciplina){
 		
 	
 		if(this.nomesdisciplinas.indexOf(nomeDisciplina) == -1){
@@ -164,6 +166,9 @@ public class ExtrairDados {
 			this.disciplinas.add(new Disciplina());
 			this.contDisciplinas++;
 			this.disciplinas.get(this.contDisciplinas).setNome(nomeDisciplina);
+			this.disciplinas.get(this.contDisciplinas).setCodigo(codigoDisciplina);
+			
+			
 			
 		}if (this.disciplinas.get(this.nomesdisciplinas.lastIndexOf(nomeDisciplina)).getAlunos().indexOf(nomeAluno.getNome()) == -1){
 			this.disciplinas.get(this.nomesdisciplinas.lastIndexOf(nomeDisciplina)).setAluno(nomeAluno.getNome());
@@ -185,13 +190,26 @@ public class ExtrairDados {
 		this.TopicosPorArea.add(new TopicosPorArea());
 		this.contTopicosPorArea++;
 		this.TopicosPorArea.get(this.contTopicosPorArea).setNome(nomeTopicosPorArea);
+		double notaTopico = 0;
 		
 		for (int i = 0; i<=contAlunos;i++){
-			double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
-			double nota2 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina2))*(peso2);
-			this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
-			this.TopicosPorArea.get(this.contTopicosPorArea).setNota((nota1+nota2)/(peso1+peso2));
+			while(true) {
+				
+			}
+			//double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
+			//double nota2 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina2))*(peso2);
+			//this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
+			//this.TopicosPorArea.get(this.contTopicosPorArea).setNota((nota1+nota2)/(peso1+peso2));
 		}
+		
+	}
+	
+	public void imprimirDisciplinas() {
+		for( Disciplina disciplina: disciplinas){
+			System.out.println(disciplina.getCodigo()+"\t"+disciplina.getNome());
+		}
+	}
+	public void topicoArea() {
 		
 	}
 	

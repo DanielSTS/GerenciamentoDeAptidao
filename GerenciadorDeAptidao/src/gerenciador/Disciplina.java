@@ -8,9 +8,17 @@ public class Disciplina {
 	private ArrayList<String> alunos = new ArrayList<String>();
 	private ArrayList<Double> notas = new ArrayList<Double> ();
 	private int contAlunos = 0,contNotas = 0;
-	private String nome;
+	private String nome,codigo;
 	
 	
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
 	public void imprimeDados(){
 		for (int i = 0; i<contAlunos;i++){
 			System.out.println(this.alunos.get(i));
