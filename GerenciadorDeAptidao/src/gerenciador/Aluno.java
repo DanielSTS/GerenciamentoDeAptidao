@@ -44,7 +44,7 @@ public class Aluno {
 
 	public void setNotas(double notas){
 		this.notas.add(notas);
-		contNotas++;
+		contNotas++; 
 	}
 	public void setDisciplina(String disciplina){
 		this.disciplinas.add(disciplina);

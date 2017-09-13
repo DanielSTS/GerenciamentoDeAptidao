@@ -13,12 +13,12 @@ public class TestFuncionalidades {
 		dados.criaAlunos("Leonardo");
 		dados.criaAlunos("Daniel");
 		dados.criaAlunos("Alberto");
+		dados.criaAlunos("Willian");
 		
-		
-		dados.criarTopico("programador","Algoritmos e Programação",4,"Ciências do Ambiente",4);
-		dados.criarTopico("eletrônica","Sistemas Digitais I", 3,"Inglês Instrumental", 5);
-		dados.imprimirTudo("Algoritmos e Programação","programador");
-		dados.imprimirTudo("Sistemas Digitais I","eletrônica");
+		dados.criarTopico("programador","Algoritmos e Programaï¿½ï¿½o",4,"Ciï¿½ncias do Ambiente",4);
+		dados.criarTopico("eletrï¿½nica","Sistemas Digitais I", 3,"Inglï¿½s Instrumental", 5);
+		dados.imprimirTudo("Algoritmos e Programaï¿½ï¿½o","programador");
+		dados.imprimirTudo("Sistemas Digitais I","eletrï¿½nica");
 	}
 
 }
