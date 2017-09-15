@@ -198,19 +198,16 @@ public class ExtrairDados {
 		String nomeDisciplina = null;
 		Scanner entrada = new Scanner(System.in);
 		
-		
-		
-			while(true) {
-				System.out.println();
-				nomeDisciplina = entrada.next();
-				System.out.println();
-				peso = entrada.nextInt();
-				pesoTotal = pesoTotal + peso;
-				
-				for (int i = 0; i<=contAlunos;i++){
-					this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
-					this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(nomeDisciplina));
-				
+		while(true) {
+			System.out.println();
+			nomeDisciplina = entrada.next();
+			System.out.println();
+			peso = entrada.nextInt();
+			pesoTotal = pesoTotal + peso;
+			
+			for (int i = 0; i<=contAlunos;i++){
+				this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
+				this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(nomeDisciplina));
 			}
 			//double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
 			//double nota2 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina2))*(peso2);
