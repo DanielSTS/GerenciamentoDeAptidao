@@ -189,32 +189,45 @@ public class ExtrairDados {
 		this.TopicosPorArea.get(posicao2).imprimeDados();
 	}
 	
-	public void criarTopico(String nomeTopicosPorArea, String disciplina1, double peso1,String disciplina2, double peso2){
-		this.nomeTopicosPorArea.add(nomeTopicosPorArea);
+	public void criarTopico(){
 		this.TopicosPorArea.add(new TopicosPorArea());
 		this.contTopicosPorArea++;
-		this.TopicosPorArea.get(this.contTopicosPorArea).setNome(nomeTopicosPorArea);
-		double notaTopico = 0,peso = 0, pesoTotal = 0;
-		String nomeDisciplina = null;
+		
+		ArrayList<Double> pesos = new ArrayList<Double>();
+		ArrayList<String> codigoD = new ArrayList<String>();
+		double notaTopico = 0, condicaoParada = 1, pesoTotal = 0;
 		Scanner entrada = new Scanner(System.in);
 		
-		while(true) {
-			System.out.println();
-			nomeDisciplina = entrada.next();
-			System.out.println();
-			peso = entrada.nextInt();
-			pesoTotal = pesoTotal + peso;
-			
-			for (int i = 0; i<=contAlunos;i++){
-				this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
-				this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(nomeDisciplina));
-			}
-			//double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
-			//double nota2 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina2))*(peso2);
-			//this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
-			//this.TopicosPorArea.get(this.contTopicosPorArea).setNota((nota1+nota2)/(peso1+peso2));
+		
+		while(condicaoParada != 0) {
+			System.out.print("Código: ");
+			codigoD.add(entrada.next());
+			System.out.print("Peso: ");
+			pesos.add(entrada.nextDouble());
+			System.out.print("0/terminar 1/continuar: ");
+			condicaoParada = entrada.nextDouble();
 		}
 		
+		for(Double total: pesos) {
+			pesoTotal += total;
+		}
+		
+		for (int i = 0; i<=contAlunos;i++){
+			double notasTotalPesos = 0 ;
+			int contador = 0;
+			for(String disciplina : codigoD) {
+				String disc = this.nomesdisciplinas.get(this.codigoDisciplina.lastIndexOf(disciplina));
+				double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disc));
+				nota1 *= pesos.get(contador);
+				notasTotalPesos += nota1;
+				
+			}
+			this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
+			this.TopicosPorArea.get(this.contTopicosPorArea).setNota((notasTotalPesos/pesoTotal));
+		}
+		
+		this.TopicosPorArea.get(this.contTopicosPorArea).imprimeDados();
+			
 	}
 	
 	public void imprimirDisciplinas() {

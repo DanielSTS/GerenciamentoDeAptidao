@@ -10,7 +10,7 @@ public class TopicosPorArea {
 	private String nome;
 	
 	public void rankingAlunos() {
-		for(int i = 1; i <= contNotas; i++) {
+		for(int i = 1; i < contNotas; i++) {
 			double key = this.notas.get(i);
 			int j = i;
 			

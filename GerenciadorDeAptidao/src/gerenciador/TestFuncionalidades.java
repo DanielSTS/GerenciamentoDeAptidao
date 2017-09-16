@@ -26,10 +26,10 @@ public class TestFuncionalidades {
 			
 			if(opcao == 1) {
 				dados.imprimirDisciplinas();
-				System.out.println("Digite as disciplinas com o peso para o tópico\n");
-				
+				System.out.println("Digite os codigos das disciplinas com o peso para o tópico\nExemplo: TEC.0455\n2\nDigite 0 para terminar");
+				dados.criarTopico();
 			}
-		}while(true);
+		}while(opcao != -1);
 		
 		/*dados.criarTopico("programador","Algoritmos e Programa��o",4,"Ci�ncias do Ambiente",4);
 		dados.criarTopico("eletr�nica","Sistemas Digitais I", 3,"Cálculo Diferencial e Integral I", 5);
