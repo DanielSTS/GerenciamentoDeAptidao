@@ -41,10 +41,6 @@ public class TestFuncionalidades {
 			}
 		}while(opcao != -1);
 		
-		/*dados.criarTopico("programador","Algoritmos e Programa��o",4,"Ci�ncias do Ambiente",4);
-		dados.criarTopico("eletr�nica","Sistemas Digitais I", 3,"Cálculo Diferencial e Integral I", 5);
-		dados.imprimirTudo("Algoritmos e Programa��o","programador");
-		dados.imprimirTudo("Sistemas Digitais I","eletr�nica");*/
 	}
 
 }

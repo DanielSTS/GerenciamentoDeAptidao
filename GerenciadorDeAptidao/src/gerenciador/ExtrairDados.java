@@ -213,7 +213,7 @@ public class ExtrairDados {
 			pesoTotal += total;
 		}
 		
-		for (int i = 0; i<=contAlunos;i++){
+		for (int i = 0; i <= contAlunos;i++){
 			double notasTotalPesos = 0 ;
 			int contador = 0;
 			for(String disciplina : codigoD) {

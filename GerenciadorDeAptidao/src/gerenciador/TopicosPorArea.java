@@ -11,42 +11,32 @@ public class TopicosPorArea {
 	
 	//Criar um vetor com os mesmos valores do ArrayList e depois ordenar
 	public void rankingAlunos() {
-		for(int i = 1; i < contNotas; i++) {
-			double key = this.notas.get(i);
-			int j = i;
-			
-			while((j > 0) && (this.notas.get(j - 1) > key)) {
-				this.notas.add(j, this.notas.get(j - 1));
-				j -= 1;
-				this.notas.add(j, key);
+		double auxNotas = 0;
+		String auxAlunos;
+		for(int i = 0; i < this.contNotas; i++) {
+			for(int j = 0; j < this.contNotas - 1; j++) {
+				if(this.notas.get(j) > this.notas.get(j+1)) {
+					auxNotas = this.notas.get(j);
+					auxAlunos = this.alunos.get(j);
+					
+					this.notas.set(j, this.notas.get(j+1));
+					this.alunos.set(j, this.alunos.get(j+1));
+					
+					this.notas.set(j+1, auxNotas);
+					this.alunos.set(j+1, auxAlunos);
+				}
 			}
 		}
-		/*void insertionSort(int lista[], int tamanho){
-		int indice, percorrer = 0;
-		double auxiliar = 0, auxiliaTroca = 0;
-		for(indice = 1; indice < this.contNotas; indice++){
-			auxiliar = this.notas.get(indice); //lista[indice];
-			auxiliaTroca = this.notas.get(indice);//lista[indice];
-			percorrer = indice - 1;
-			
-			while(auxiliar <= this.notas.get(percorrer) && percorrer >= 0){
-				
-				this.notas.add(percorrer + 1, this.notas.get(percorrer)); //lista[percorrer];
-				this.notas.add(percorrer, auxiliaTroca); //lista[percorrer] = auxiliaTroca;
-				percorrer = percorrer - 1;
-				
-			}
-			this.notas.add(percorrer + 1, auxiliar);//lista[percorrer + 1] = auxiliar;
-		}*/
-		
 	}
 	
-	
 	public void imprimeDados(){
-		//rankingAlunos();
-		for (int i = 0; i < contAlunos; i++){
+		rankingAlunos();
+		int posicao = 1;
+		for (int i = contAlunos-1; i >= 0; i--){
+			System.out.println(posicao+"ºLugar");
 			System.out.println(this.alunos.get(i));
-			System.out.println(this.notas.get(i));
+			System.out.printf("%.2f\n\n", (this.notas.get(i)));
+			posicao++;
 		}
 	}
 	
