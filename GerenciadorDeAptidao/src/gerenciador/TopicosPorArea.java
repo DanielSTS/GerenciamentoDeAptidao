@@ -9,6 +9,7 @@ public class TopicosPorArea {
 	private int contAlunos = 0, contNotas = 0;
 	private String nome;
 	
+	//Criar um vetor com os mesmos valores do ArrayList e depois ordenar
 	public void rankingAlunos() {
 		for(int i = 1; i < contNotas; i++) {
 			double key = this.notas.get(i);
@@ -42,7 +43,7 @@ public class TopicosPorArea {
 	
 	
 	public void imprimeDados(){
-		rankingAlunos();
+		//rankingAlunos();
 		for (int i = 0; i < contAlunos; i++){
 			System.out.println(this.alunos.get(i));
 			System.out.println(this.notas.get(i));

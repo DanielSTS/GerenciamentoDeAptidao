@@ -26,8 +26,18 @@ public class TestFuncionalidades {
 			
 			if(opcao == 1) {
 				dados.imprimirDisciplinas();
-				System.out.println("Digite os codigos das disciplinas com o peso para o tópico\nExemplo: TEC.0455\n2\nDigite 0 para terminar");
+				System.out.println("Digite os codigos das disciplinas com o peso para o tópico\nExemplo:\nCódigo: TEC.0455\nPeso: 2\nDigite 0 para terminar");
 				dados.criarTopico();
+			}
+			else if(opcao == 2) {
+				int opcaoTopico = 0;
+				System.out.println("Digite\n1 - Desenvolvimento de Software\n2 - Eletrônica");
+				opcaoTopico = entrada.nextInt();
+				if(opcaoTopico == 1) {
+					dados.criarTopicoPreDefinido("DesenvolvedorSoftware","Algoritmos e Programa��o",4,"Estruturas de Dados e Algoritmos",3);
+				}else if(opcaoTopico == 2) {
+					dados.criarTopicoPreDefinido("Eletrônica","Sistemas Digitais I", 3,"Sistemas Digitais II", 5);
+				}
 			}
 		}while(opcao != -1);
 		

@@ -189,6 +189,7 @@ public class ExtrairDados {
 		this.TopicosPorArea.get(posicao2).imprimeDados();
 	}
 	
+	//Método para criar tópico de preferência do usuário!
 	public void criarTopico(){
 		this.TopicosPorArea.add(new TopicosPorArea());
 		this.contTopicosPorArea++;
@@ -236,8 +237,21 @@ public class ExtrairDados {
 			
 		}
 	}
-	public void topicoArea() {
+	
+	public void criarTopicoPreDefinido(String nomeTopicosPorArea, String disciplina1, double peso1,String disciplina2, double peso2){
+		this.nomeTopicosPorArea.add(nomeTopicosPorArea);
+		this.TopicosPorArea.add(new TopicosPorArea());
+		this.contTopicosPorArea++;
+		this.TopicosPorArea.get(this.contTopicosPorArea).setNome(nomeTopicosPorArea);
 		
+		for (int i = 0; i<=contAlunos;i++){
+			double nota1 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina1))*(peso1);
+			double nota2 = this.alunos.get(i).getNotas().get(this.alunos.get(i).getDisciplina().lastIndexOf(disciplina2))*(peso2);
+			this.TopicosPorArea.get(this.contTopicosPorArea).setAluno(this.alunos.get(i).getNome());
+			this.TopicosPorArea.get(this.contTopicosPorArea).setNota((nota1+nota2)/(peso1+peso2));
+		}
+		
+		this.TopicosPorArea.get(this.contTopicosPorArea).imprimeDados();
 	}
 	
 }
