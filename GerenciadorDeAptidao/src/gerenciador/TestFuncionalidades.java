@@ -2,6 +2,7 @@ package gerenciador;
 
 import java.io.*;
 import java.util.Scanner;
+import javax.swing.*;
 
 public class TestFuncionalidades {
 
@@ -20,7 +21,10 @@ public class TestFuncionalidades {
 		
 		int opcao = 0, contadorCriarTopico = 0;
 		do {
-			System.out.println("Seja bem vindo ao Gerenciamento de Aptidão!");
+			JFrame jp = new JFrame("Gerenciamento de Aptidão!");
+			jp.setSize(300, 120);
+			jp.show();
+			//System.out.println("Seja bem vindo ao Gerenciamento de Aptidão!");
 			System.out.println("Digite\n1-Criar Tópico\n2-Escolher Tópico pré-definido");
 			opcao = entrada.nextInt();
 			
