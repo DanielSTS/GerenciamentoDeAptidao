@@ -1,4 +1,4 @@
-package gerenciador;
+/*package gerenciador;
 
 import java.io.*;
 import java.util.Scanner;
@@ -48,3 +48,4 @@ public class TestFuncionalidades {
 	}
 
 }
+*/
