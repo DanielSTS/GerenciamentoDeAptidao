@@ -267,6 +267,7 @@ public class ExtrairDados {
 		}
 		
 		//this.TopicosPorArea.get(this.contTopicosPorArea).imprimeDados();
+                this.TopicosPorArea.get(this.contTopicosPorArea).rankingAlunos();
 	}
 	
 }
