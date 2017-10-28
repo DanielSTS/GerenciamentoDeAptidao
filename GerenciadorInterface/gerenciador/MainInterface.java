@@ -58,40 +58,40 @@ public class MainInterface extends javax.swing.JFrame {
         jCheckBox18 = new javax.swing.JCheckBox();
         jCheckBox19 = new javax.swing.JCheckBox();
         jCheckBox20 = new javax.swing.JCheckBox();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
         jScrollPane5 = new javax.swing.JScrollPane();
         jTextPane3 = new javax.swing.JTextPane();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
-        jScrollPane7 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
-        jScrollPane8 = new javax.swing.JScrollPane();
-        jTextPane6 = new javax.swing.JTextPane();
-        jScrollPane9 = new javax.swing.JScrollPane();
-        jTextPane7 = new javax.swing.JTextPane();
-        jScrollPane10 = new javax.swing.JScrollPane();
-        jTextPane8 = new javax.swing.JTextPane();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        jTextPane9 = new javax.swing.JTextPane();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        jTextPane10 = new javax.swing.JTextPane();
-        jScrollPane13 = new javax.swing.JScrollPane();
-        jTextPane11 = new javax.swing.JTextPane();
-        jScrollPane14 = new javax.swing.JScrollPane();
-        jTextPane12 = new javax.swing.JTextPane();
-        jScrollPane15 = new javax.swing.JScrollPane();
-        jTextPane13 = new javax.swing.JTextPane();
-        jScrollPane16 = new javax.swing.JScrollPane();
-        jTextPane14 = new javax.swing.JTextPane();
-        jScrollPane17 = new javax.swing.JScrollPane();
-        jTextPane15 = new javax.swing.JTextPane();
-        jScrollPane18 = new javax.swing.JScrollPane();
-        jTextPane16 = new javax.swing.JTextPane();
-        jScrollPane19 = new javax.swing.JScrollPane();
-        jTextPane17 = new javax.swing.JTextPane();
         ReadyCriar = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jScrollPane21 = new javax.swing.JScrollPane();
+        jTextPane19 = new javax.swing.JTextPane();
+        jScrollPane22 = new javax.swing.JScrollPane();
+        jTextPane20 = new javax.swing.JTextPane();
+        jScrollPane23 = new javax.swing.JScrollPane();
+        jTextPane21 = new javax.swing.JTextPane();
+        jScrollPane24 = new javax.swing.JScrollPane();
+        jTextPane22 = new javax.swing.JTextPane();
+        jScrollPane25 = new javax.swing.JScrollPane();
+        jTextPane23 = new javax.swing.JTextPane();
+        jScrollPane26 = new javax.swing.JScrollPane();
+        jTextPane24 = new javax.swing.JTextPane();
+        jScrollPane27 = new javax.swing.JScrollPane();
+        jTextPane25 = new javax.swing.JTextPane();
+        jScrollPane28 = new javax.swing.JScrollPane();
+        jTextPane26 = new javax.swing.JTextPane();
+        jScrollPane29 = new javax.swing.JScrollPane();
+        jTextPane27 = new javax.swing.JTextPane();
+        jScrollPane30 = new javax.swing.JScrollPane();
+        jTextPane28 = new javax.swing.JTextPane();
+        jScrollPane31 = new javax.swing.JScrollPane();
+        jTextPane29 = new javax.swing.JTextPane();
+        jScrollPane32 = new javax.swing.JScrollPane();
+        jTextPane30 = new javax.swing.JTextPane();
+        jScrollPane33 = new javax.swing.JScrollPane();
+        jTextPane31 = new javax.swing.JTextPane();
+        jScrollPane34 = new javax.swing.JScrollPane();
+        jTextPane32 = new javax.swing.JTextPane();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTextPane4 = new javax.swing.JTextPane();
         TopicoDefinido = new javax.swing.JPanel();
         eletronica = new javax.swing.JRadioButton();
         desenvolvedor = new javax.swing.JRadioButton();
@@ -125,8 +125,9 @@ public class MainInterface extends javax.swing.JFrame {
         });
 
         jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(250, 21, 252));
+        jTextArea1.setBackground(new java.awt.Color(127, 255, 0));
         jTextArea1.setColumns(20);
+        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
         jTextArea1.setRows(5);
         jTextArea1.setText("              SEJA BEM VINDO AO SISTEMA DE\n       COEFICIENTE DE REDIMENTO ACADÊMICO\n              POR ÁREA DE CONHECIMENTO\n        CLIQUE CRIAR PARA FAZER O SEU TÓPICO\n  OU ESCOLHER PARA SELECIONAR UM ESPECÍFICO\n");
         jScrollPane2.setViewportView(jTextArea1);
@@ -143,15 +144,15 @@ public class MainInterface extends javax.swing.JFrame {
                         .addGap(131, 131, 131)
                         .addComponent(Escolher, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(MenuInicioLayout.createSequentialGroup()
-                        .addGap(178, 178, 178)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(173, 173, 173)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(343, Short.MAX_VALUE))
         );
         MenuInicioLayout.setVerticalGroup(
             MenuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuInicioLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(MenuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Criar)
@@ -203,7 +204,7 @@ public class MainInterface extends javax.swing.JFrame {
             }
         });
 
-        jCheckBox11.setText("jCheckBox1");
+        jCheckBox11.setText("Instrumentação Eletrônica");
         jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox11ActionPerformed(evt);
@@ -224,86 +225,56 @@ public class MainInterface extends javax.swing.JFrame {
             }
         });
 
-        jCheckBox14.setText("jCheckBox1");
+        jCheckBox14.setText("Metodologia da Pesquisa Científica");
         jCheckBox14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox14ActionPerformed(evt);
             }
         });
 
-        jCheckBox15.setText("jCheckBox1");
+        jCheckBox15.setText("Álgebra Vetorial e Geometria Analítica");
         jCheckBox15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox15ActionPerformed(evt);
             }
         });
 
-        jCheckBox16.setText("jCheckBox1");
+        jCheckBox16.setText("Inglês Instrumental");
         jCheckBox16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox16ActionPerformed(evt);
             }
         });
 
-        jCheckBox17.setText("jCheckBox1");
+        jCheckBox17.setText("Ciências do Ambiente");
         jCheckBox17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox17ActionPerformed(evt);
             }
         });
 
-        jCheckBox18.setText("jCheckBox1");
+        jCheckBox18.setText("Leitura e Produção de Texto");
         jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox18ActionPerformed(evt);
             }
         });
 
-        jCheckBox19.setText("jCheckBox1");
+        jCheckBox19.setText("Relações Humanas no Trabalho");
         jCheckBox19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox19ActionPerformed(evt);
             }
         });
 
-        jCheckBox20.setText("jCheckBox1");
+        jCheckBox20.setText("Introdução a Engenharia");
         jCheckBox20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox20ActionPerformed(evt);
             }
         });
 
-        jScrollPane4.setViewportView(jTextPane2);
-
         jScrollPane5.setViewportView(jTextPane3);
-
-        jScrollPane6.setViewportView(jTextPane4);
-
-        jScrollPane7.setViewportView(jTextPane5);
-
-        jScrollPane8.setViewportView(jTextPane6);
-
-        jScrollPane9.setViewportView(jTextPane7);
-
-        jScrollPane10.setViewportView(jTextPane8);
-
-        jScrollPane11.setViewportView(jTextPane9);
-
-        jScrollPane12.setViewportView(jTextPane10);
-
-        jScrollPane13.setViewportView(jTextPane11);
-
-        jScrollPane14.setViewportView(jTextPane12);
-
-        jScrollPane15.setViewportView(jTextPane13);
-
-        jScrollPane16.setViewportView(jTextPane14);
-
-        jScrollPane17.setViewportView(jTextPane15);
-
-        jScrollPane18.setViewportView(jTextPane16);
-
-        jScrollPane19.setViewportView(jTextPane17);
 
         ReadyCriar.setText("Ready");
         ReadyCriar.addActionListener(new java.awt.event.ActionListener() {
@@ -319,138 +290,166 @@ public class MainInterface extends javax.swing.JFrame {
             }
         });
 
+        jScrollPane21.setViewportView(jTextPane19);
+
+        jScrollPane22.setViewportView(jTextPane20);
+
+        jScrollPane23.setViewportView(jTextPane21);
+
+        jScrollPane24.setViewportView(jTextPane22);
+
+        jScrollPane25.setViewportView(jTextPane23);
+
+        jScrollPane26.setViewportView(jTextPane24);
+
+        jScrollPane27.setViewportView(jTextPane25);
+
+        jScrollPane28.setViewportView(jTextPane26);
+
+        jScrollPane29.setViewportView(jTextPane27);
+
+        jScrollPane30.setViewportView(jTextPane28);
+
+        jScrollPane31.setViewportView(jTextPane29);
+
+        jScrollPane32.setViewportView(jTextPane30);
+
+        jScrollPane33.setViewportView(jTextPane31);
+
+        jScrollPane34.setViewportView(jTextPane32);
+
+        jScrollPane6.setViewportView(jTextPane4);
+
         javax.swing.GroupLayout CriarTopicoLayout = new javax.swing.GroupLayout(CriarTopico);
         CriarTopico.setLayout(CriarTopicoLayout);
         CriarTopicoLayout.setHorizontalGroup(
             CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CriarTopicoLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox7)
-                    .addComponent(jCheckBox6)
-                    .addComponent(jCheckBox1)
-                    .addComponent(jCheckBox10)
-                    .addComponent(jCheckBox9)
-                    .addComponent(jCheckBox8)
-                    .addComponent(jCheckBox13)
-                    .addComponent(jCheckBox12)
-                    .addComponent(jCheckBox11)
-                    .addComponent(jCheckBox16)
-                    .addComponent(jCheckBox15)
-                    .addComponent(jCheckBox14)
-                    .addComponent(jCheckBox19)
-                    .addComponent(jCheckBox18)
-                    .addComponent(jCheckBox17)
-                    .addComponent(jCheckBox20))
+                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(CriarTopicoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(ReadyCriar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(CriarTopicoLayout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox7)
+                            .addComponent(jCheckBox6)
+                            .addComponent(jCheckBox1)
+                            .addComponent(jCheckBox10)
+                            .addComponent(jCheckBox9)
+                            .addComponent(jCheckBox8)
+                            .addComponent(jCheckBox13)
+                            .addComponent(jCheckBox12)
+                            .addComponent(jCheckBox11)
+                            .addComponent(jCheckBox16)
+                            .addComponent(jCheckBox15)
+                            .addComponent(jCheckBox14)
+                            .addComponent(jCheckBox19)
+                            .addComponent(jCheckBox18)
+                            .addComponent(jCheckBox17)
+                            .addComponent(jCheckBox20))))
                 .addGap(35, 35, 35)
                 .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(CriarTopicoLayout.createSequentialGroup()
-                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(156, 156, 156)
-                        .addComponent(ReadyCriar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(176, Short.MAX_VALUE))
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane24, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane26, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane28, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane30, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane31, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane32, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane33, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane34, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane29, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(102, Short.MAX_VALUE))
         );
         CriarTopicoLayout.setVerticalGroup(
             CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                .addContainerGap(37, Short.MAX_VALUE)
-                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(ReadyCriar)
-                        .addComponent(jButton2))
-                    .addGroup(CriarTopicoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
                         .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                                                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                                                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                                                                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                                                                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
-                                                                                                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                            .addComponent(jCheckBox6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                            .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                                            .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                        .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                            .addComponent(jCheckBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                        .addComponent(jCheckBox10, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                    .addComponent(jScrollPane7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                    .addComponent(jCheckBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                    .addComponent(jCheckBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                .addComponent(jCheckBox13, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                            .addComponent(jScrollPane10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                        .addComponent(jCheckBox12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                    .addComponent(jScrollPane11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                .addComponent(jCheckBox11, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                            .addComponent(jScrollPane12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                        .addComponent(jCheckBox16, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                    .addComponent(jScrollPane13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(jCheckBox15, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                            .addComponent(jScrollPane14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(jCheckBox14, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addComponent(jScrollPane15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jCheckBox19, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jScrollPane16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jCheckBox18, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jScrollPane17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jCheckBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBox17, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jCheckBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jCheckBox10, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jCheckBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jCheckBox13, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jCheckBox12, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jCheckBox11, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(CriarTopicoLayout.createSequentialGroup()
                         .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jCheckBox20, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(22, 22, 22))
+                            .addComponent(jScrollPane33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(CriarTopicoLayout.createSequentialGroup()
+                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jCheckBox16, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jScrollPane30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jCheckBox15, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CriarTopicoLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jScrollPane31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jScrollPane34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jScrollPane32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(34, 34, 34))
+                                    .addGroup(CriarTopicoLayout.createSequentialGroup()
+                                        .addGap(22, 22, 22)
+                                        .addComponent(jCheckBox14, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jCheckBox19, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jCheckBox18, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jCheckBox17, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(18, 18, 18)
+                        .addComponent(jCheckBox20, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addGroup(CriarTopicoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ReadyCriar)
+                    .addComponent(jButton2))
+                .addGap(1455, 1455, 1455))
         );
 
         MainPanel.add(CriarTopico, "card2");
@@ -766,7 +765,66 @@ public class MainInterface extends javax.swing.JFrame {
             codigosD.add("TEC.0455"); 
             pesosD.add(Double.valueOf(jTextPane3.getText()));
         }
-        
+        if(jCheckBox1.isSelected()){
+            codigosD.add("TEC.0455"); 
+            pesosD.add(Double.valueOf(jTextPane19.getText()));
+        }
+        if(jCheckBox7.isSelected()){
+            codigosD.add("TEC.0457"); 
+            pesosD.add(Double.valueOf(jTextPane20.getText()));
+        }
+        if(jCheckBox10.isSelected()){
+            codigosD.add("TEC.0528"); 
+            pesosD.add(Double.valueOf(jTextPane23.getText()));
+        }
+        if(jCheckBox9.isSelected()){
+            codigosD.add("TEC.0527"); 
+            pesosD.add(Double.valueOf(jTextPane21.getText()));
+        }
+        if(jCheckBox8.isSelected()){
+            codigosD.add("TEC.0455"); 
+            pesosD.add(Double.valueOf(jTextPane22.getText()));
+        }
+        if(jCheckBox13.isSelected()){
+            codigosD.add("TEC.0450"); 
+            pesosD.add(Double.valueOf(jTextPane24.getText()));
+        }
+        if(jCheckBox12.isSelected()){
+            codigosD.add("TEC.0455"); 
+            pesosD.add(Double.valueOf(jTextPane26.getText()));
+        }
+        if(jCheckBox11.isSelected()){
+            codigosD.add("TEC.0545"); 
+            pesosD.add(Double.valueOf(jTextPane25.getText()));
+        }
+        if(jCheckBox16.isSelected()){
+            codigosD.add("TEC.0452"); 
+            pesosD.add(Double.valueOf(jTextPane4.getText()));
+        }
+        if(jCheckBox15.isSelected()){
+            codigosD.add("TEC.0455"); 
+            pesosD.add(Double.valueOf(jTextPane28.getText()));
+        }
+        if(jCheckBox14.isSelected()){
+            codigosD.add("TEC.0455"); 
+            pesosD.add(Double.valueOf(jTextPane29.getText()));
+        }
+        if(jCheckBox19.isSelected()){
+            codigosD.add("TEC.0455"); 
+            pesosD.add(Double.valueOf(jTextPane32.getText()));
+        }
+        if(jCheckBox18.isSelected()){
+            codigosD.add("TEC.0453"); 
+            pesosD.add(Double.valueOf(jTextPane30.getText()));
+        }
+        if(jCheckBox17.isSelected()){
+            codigosD.add("TEC.0455"); 
+            pesosD.add(Double.valueOf(jTextPane31.getText()));
+        }
+        if(jCheckBox20.isSelected()){
+            codigosD.add("TEC.0455"); 
+            pesosD.add(Double.valueOf(jTextPane27.getText()));
+        }
         bd.pegaBancoDeDados().criarTopico(pesosD, codigosD);
         bd.pegaBancoDeDados().getArrayAlunos();
         bd.pegaBancoDeDados().getArrayNotas();
@@ -892,43 +950,43 @@ public class MainInterface extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane10;
-    private javax.swing.JScrollPane jScrollPane11;
-    private javax.swing.JScrollPane jScrollPane12;
-    private javax.swing.JScrollPane jScrollPane13;
-    private javax.swing.JScrollPane jScrollPane14;
-    private javax.swing.JScrollPane jScrollPane15;
-    private javax.swing.JScrollPane jScrollPane16;
-    private javax.swing.JScrollPane jScrollPane17;
-    private javax.swing.JScrollPane jScrollPane18;
-    private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane21;
+    private javax.swing.JScrollPane jScrollPane22;
+    private javax.swing.JScrollPane jScrollPane23;
+    private javax.swing.JScrollPane jScrollPane24;
+    private javax.swing.JScrollPane jScrollPane25;
+    private javax.swing.JScrollPane jScrollPane26;
+    private javax.swing.JScrollPane jScrollPane27;
+    private javax.swing.JScrollPane jScrollPane28;
+    private javax.swing.JScrollPane jScrollPane29;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane30;
+    private javax.swing.JScrollPane jScrollPane31;
+    private javax.swing.JScrollPane jScrollPane32;
+    private javax.swing.JScrollPane jScrollPane33;
+    private javax.swing.JScrollPane jScrollPane34;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextPane jTextPane10;
-    private javax.swing.JTextPane jTextPane11;
-    private javax.swing.JTextPane jTextPane12;
-    private javax.swing.JTextPane jTextPane13;
-    private javax.swing.JTextPane jTextPane14;
-    private javax.swing.JTextPane jTextPane15;
-    private javax.swing.JTextPane jTextPane16;
-    private javax.swing.JTextPane jTextPane17;
-    private javax.swing.JTextPane jTextPane2;
+    private javax.swing.JTextPane jTextPane19;
+    private javax.swing.JTextPane jTextPane20;
+    private javax.swing.JTextPane jTextPane21;
+    private javax.swing.JTextPane jTextPane22;
+    private javax.swing.JTextPane jTextPane23;
+    private javax.swing.JTextPane jTextPane24;
+    private javax.swing.JTextPane jTextPane25;
+    private javax.swing.JTextPane jTextPane26;
+    private javax.swing.JTextPane jTextPane27;
+    private javax.swing.JTextPane jTextPane28;
+    private javax.swing.JTextPane jTextPane29;
     private javax.swing.JTextPane jTextPane3;
+    private javax.swing.JTextPane jTextPane30;
+    private javax.swing.JTextPane jTextPane31;
+    private javax.swing.JTextPane jTextPane32;
     private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTextPane jTextPane5;
-    private javax.swing.JTextPane jTextPane6;
-    private javax.swing.JTextPane jTextPane7;
-    private javax.swing.JTextPane jTextPane8;
-    private javax.swing.JTextPane jTextPane9;
     private javax.swing.JButton readyDefinido;
     // End of variables declaration//GEN-END:variables
 }
