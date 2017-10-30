@@ -111,6 +111,8 @@ public class MainInterface extends javax.swing.JFrame {
 
         MainPanel.setLayout(new java.awt.CardLayout());
 
+        MenuInicio.setBackground(new java.awt.Color(152, 251, 152));
+
         Criar.setText("Criar");
         Criar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,11 +127,13 @@ public class MainInterface extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setBackground(new java.awt.Color(127, 255, 0));
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(0, 100, 0));
         jTextArea1.setColumns(20);
-        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setFont(new java.awt.Font("Noto Sans", 3, 24)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(5);
-        jTextArea1.setText("             \n                              SEJA BEM VINDO AO SISTEMA DE\n                   COEFICIENTE DE REDIMENTO ACADÊMICO\n                             POR ÁREA DE CONHECIMENTO\n                     CLIQUE CRIAR PARA CRIAR O SEU TÓPICO\n              OU ESCOLHER PARA SELECIONAR UM ESPECÍFICO\n");
+        jTextArea1.setText("             \n                              SEJA BEM VINDO AO SISTEMA DE\n                   COEFICIENTE DE REDIMENTO DIRECIONADO\n                                                     CRD\n                     CLIQUE CRIAR PARA CRIAR O SEU TÓPICO\n              OU ESCOLHER PARA SELECIONAR UM ESPECÍFICO\n");
         jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jScrollPane2.setViewportView(jTextArea1);
 
@@ -138,28 +142,32 @@ public class MainInterface extends javax.swing.JFrame {
         MenuInicioLayout.setHorizontalGroup(
             MenuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuInicioLayout.createSequentialGroup()
-                .addGap(173, 173, 173)
-                .addGroup(MenuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(MenuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(MenuInicioLayout.createSequentialGroup()
+                        .addGap(109, 109, 109)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 688, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MenuInicioLayout.createSequentialGroup()
+                        .addGap(243, 243, 243)
                         .addComponent(Criar, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Escolher, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(343, 343, 343))
+                        .addGap(230, 230, 230)
+                        .addComponent(Escolher, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         MenuInicioLayout.setVerticalGroup(
             MenuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MenuInicioLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
+                .addGap(118, 118, 118)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52)
                 .addGroup(MenuInicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Escolher)
                     .addComponent(Criar))
-                .addGap(1827, 1827, 1827))
+                .addContainerGap())
         );
 
         MainPanel.add(MenuInicio, "card7");
+
+        CriarTopico.setBackground(new java.awt.Color(152, 251, 152));
 
         jCheckBox1.setText("Lab. de Algoritmos e Programação");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -452,6 +460,8 @@ public class MainInterface extends javax.swing.JFrame {
 
         MainPanel.add(CriarTopico, "card2");
 
+        TopicoDefinido.setBackground(new java.awt.Color(152, 251, 152));
+
         eletronica.setText("Eletrônica");
         eletronica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -459,6 +469,7 @@ public class MainInterface extends javax.swing.JFrame {
             }
         });
 
+        desenvolvedor.setBackground(new java.awt.Color(152, 251, 152));
         desenvolvedor.setText("Desenvolvimento de Software");
         desenvolvedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -484,35 +495,37 @@ public class MainInterface extends javax.swing.JFrame {
         TopicoDefinido.setLayout(TopicoDefinidoLayout);
         TopicoDefinidoLayout.setHorizontalGroup(
             TopicoDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TopicoDefinidoLayout.createSequentialGroup()
-                .addGap(151, 151, 151)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 212, Short.MAX_VALUE)
-                .addComponent(readyDefinido, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(384, 384, 384))
             .addGroup(TopicoDefinidoLayout.createSequentialGroup()
-                .addGap(277, 277, 277)
                 .addGroup(TopicoDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(desenvolvedor)
-                    .addComponent(eletronica))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(TopicoDefinidoLayout.createSequentialGroup()
+                        .addGap(190, 190, 190)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(220, 220, 220)
+                        .addComponent(readyDefinido, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(TopicoDefinidoLayout.createSequentialGroup()
+                        .addGap(277, 277, 277)
+                        .addGroup(TopicoDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(desenvolvedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(eletronica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(337, Short.MAX_VALUE))
         );
         TopicoDefinidoLayout.setVerticalGroup(
             TopicoDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TopicoDefinidoLayout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addComponent(eletronica)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(desenvolvedor)
-                .addGap(66, 66, 66)
+                .addComponent(eletronica, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(desenvolvedor, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
                 .addGroup(TopicoDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(readyDefinido)
                     .addComponent(jButton4))
-                .addContainerGap(1867, Short.MAX_VALUE))
+                .addContainerGap(1911, Short.MAX_VALUE))
         );
 
         MainPanel.add(TopicoDefinido, "card3");
 
+        RankingTopicoCriado.setBackground(new java.awt.Color(152, 251, 152));
         RankingTopicoCriado.addInputMethodListener(new java.awt.event.InputMethodListener() {
             public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
                 RankingTopicoCriadoInputMethodTextChanged(evt);
@@ -521,6 +534,7 @@ public class MainInterface extends javax.swing.JFrame {
             }
         });
 
+        jTable1.setBackground(new java.awt.Color(20, 255, 0));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -546,23 +560,25 @@ public class MainInterface extends javax.swing.JFrame {
         RankingTopicoCriadoLayout.setHorizontalGroup(
             RankingTopicoCriadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RankingTopicoCriadoLayout.createSequentialGroup()
-                .addGap(136, 136, 136)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(232, Short.MAX_VALUE))
+                .addContainerGap(149, Short.MAX_VALUE)
+                .addGroup(RankingTopicoCriadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
         RankingTopicoCriadoLayout.setVerticalGroup(
             RankingTopicoCriadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RankingTopicoCriadoLayout.createSequentialGroup()
-                .addGroup(RankingTopicoCriadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 1748, Short.MAX_VALUE))
+                .addGap(145, 145, 145)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addComponent(jButton1)
+                .addGap(0, 1771, Short.MAX_VALUE))
         );
 
         MainPanel.add(RankingTopicoCriado, "card4");
 
+        RankingPreDefinido.setBackground(new java.awt.Color(152, 251, 152));
         RankingPreDefinido.addInputMethodListener(new java.awt.event.InputMethodListener() {
             public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
                 RankingPreDefinidoInputMethodTextChanged(evt);
@@ -571,6 +587,8 @@ public class MainInterface extends javax.swing.JFrame {
             }
         });
 
+        jTable2.setBackground(new java.awt.Color(20, 255, 0));
+        jTable2.setFont(new java.awt.Font("Noto Sans", 1, 12)); // NOI18N
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -596,19 +614,20 @@ public class MainInterface extends javax.swing.JFrame {
         RankingPreDefinidoLayout.setHorizontalGroup(
             RankingPreDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RankingPreDefinidoLayout.createSequentialGroup()
-                .addGap(136, 136, 136)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(232, Short.MAX_VALUE))
+                .addGap(149, 149, 149)
+                .addGroup(RankingPreDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 583, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(173, Short.MAX_VALUE))
         );
         RankingPreDefinidoLayout.setVerticalGroup(
             RankingPreDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RankingPreDefinidoLayout.createSequentialGroup()
-                .addGroup(RankingPreDefinidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton3)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 1748, Short.MAX_VALUE))
+                .addGap(146, 146, 146)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(93, 93, 93)
+                .addComponent(jButton3)
+                .addGap(0, 1725, Short.MAX_VALUE))
         );
 
         MainPanel.add(RankingPreDefinido, "card4");
