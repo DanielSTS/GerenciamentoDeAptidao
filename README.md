@@ -1,4 +1,4 @@
-# <h1> Gerenciamento De Aptidão</h1>
+# <h1> Gerenciamento de Aptidão</h1>
 
 Projeto do componente curricular Laboratório de Programação Orientada a Objetos, do curso de Bacharelado em Engenharia de computação, IFPB, Campus Campina Grande. 
 
